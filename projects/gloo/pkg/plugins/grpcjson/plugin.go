@@ -10,7 +10,7 @@ import (
 )
 
 // filter info
-var pluginStage = plugins.BeforeStage(plugins.OutAuthStage)
+var pluginStage = plugins.BeforeStage(plugins.RateLimitStage)
 
 func NewPlugin() *Plugin {
 	return &Plugin{}
